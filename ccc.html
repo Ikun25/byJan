@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Button Demo</title>
+    <style>
+        img {
+            display: block;
+            width: 100%;
+        }
+        .image-button {
+            display: block;
+            margin: 0 auto;
+        }
+        .image-button:active {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    < img src="1727195638066.jpg" class="image-button" onclick="showImage()">
+    < img src="1727195638084.jpg" id="image2" style="display: none;">
+    <script>
+        function showImage() {
+            document.getElementById('image2').style.display = 'block';
+            document.querySelector('.image-button').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
